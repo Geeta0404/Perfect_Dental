@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../logo.jpg';
+
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState('');
@@ -46,7 +48,7 @@ const Header = () => {
         <div className="container">
           {/* Logo */}
           <a className="navbar-brand" href="#">
-            <img src="logo.webp" alt="Smilekraft Dentistry" height="50" />
+          <img src={logo} alt="Perfect Dental" height="50" />
           </a>
 
           {/* Hamburger Menu for mobile */}
@@ -66,7 +68,9 @@ const Header = () => {
           <li key={item.name} className="nav-item">
             <Link 
               to={item.path} 
-              className={`nav-link ${activeNav === item.path ? 'text-orange-500 underline' : 'text-black'}`}
+              // className={`nav-link ${activeNav === item.path ? '#ee6401 fw-bold text-decoration-underline' : 'text-dark fw-normal'}`}
+              className={`nav-link ${activeNav === item.path ? 'fw-bold text-decoration-underline' : 'text-dark fw-normal'}`}
+style={activeNav === item.path ? { color: '#ee6401' } : {}}
             >
               {item.name}
             </Link>

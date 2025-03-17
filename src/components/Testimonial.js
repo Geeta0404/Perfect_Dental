@@ -30,13 +30,13 @@ const Testimonial = () => {
 
 
 <section className="hero-section text-light py-5 position-relative" style={{ backgroundColor: '#1a1d29' }}>
-  <button className="carousel-control-prev position-absolute start-0 translate-middle-y" type="button" data-bs-target="#heroCarousell" data-bs-slide="prev" style={{ top: '50%', transform: 'translateX(-50%)' }}>
+  <button className="carousel-control-prev position-absolute start-0 translate-middle-y" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" style={{ top: '50%', transform: 'translateX(-50%)' }}>
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
 
   <div className="container p-5">
-    <div id="heroCarousell" className="carousel slide" data-bs-ride="carousel">
+    <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         {slides.map((slider, index) => (
           <div key={slider.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -61,7 +61,7 @@ const Testimonial = () => {
     </div>
   </div>
 
-  <button className="carousel-control-next position-absolute end-0 translate-middle-y" type="button" data-bs-target="#heroCarousell" data-bs-slide="next" style={{ top: '50%', transform: 'translateX(50%)' }}>
+  <button className="carousel-control-next position-absolute end-0 translate-middle-y" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" style={{ top: '50%', transform: 'translateX(50%)' }}>
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
