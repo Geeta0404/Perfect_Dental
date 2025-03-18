@@ -59,8 +59,10 @@ const HeroSection = () => {
               <h5 className="text-uppercase small mb-2">{slide.subtitle}</h5>
               <h1 className="display-3 fw-bold mb-4">{slide.title}</h1>
               <div>
-                <button className="btn btn-primary me-2">{slide.button1}</button>
-                <button className="btn btn-danger">{slide.button2}</button>
+                {/* <button className="btn btn-primary me-2">{slide.button1}</button>
+                <button className="btn btn-danger">{slide.button2}</button> */}
+                 <button className="btn more-services-btn me-2">{slide.button1}</button>
+                 <button className="btn bg-info more-services-btn">{slide.button2}</button>
               </div>
             </div>
           </div>

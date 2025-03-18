@@ -19,7 +19,7 @@ const AboutSection = () => {
         {/* Right Side - Text & Features */}
         <div className="col-md-12 col-lg-6 mt-lg-0 mt-5 ps-4">
           <h6 className="" style={{color:"#ee6401"}}>WELCOME TO THE PERFECT SMILE DENTAL CLINIC</h6>
-          <h1 className="display-6 fw-bold text-primary space-letter-5"  style={{ letterSpacing: "1px" }}>We Create Beautiful Smiles</h1>
+          <h1 className="display-6 fw-bold space-letter-5"  style={{ letterSpacing: "1px" }}>We Create Beautiful Smiles</h1>
           <p>
           A genuine smile comes from the heart but a healthy smile needs good dental care. Now is the time to stop getting intimidated and reach out to us at the PERFECT SMILE DENTAL CLNIC, on Karve Road, Kothrud, Pune.At our clinic,you will definitely get a different experience, one that will change your opinion. We bring to you advanced dental treatments which will give you the esthetics you always wanted with utmost precision. We believe we were created to create your beautiful smiles. We provide the most advanced dental treatments with almost precision & esthetics.
           </p>
@@ -68,7 +68,8 @@ const AboutSection = () => {
   
   </div>
 </div> */}
-          <button className="btn btn-primary mt-3">Find Out More</button>
+          {/* <button className="btn btn-primary mt-3">Find Out More</button> */}
+          <button className="btn more-services-btn">View More</button>
         </div>
       </div>
     </section>

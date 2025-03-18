@@ -21,17 +21,19 @@ const ConsultationBanner = () => {
       ></div>
 
       {/* Content */}
-      <div className="container text-center d-flex position-relative text-white" style={{ zIndex: 2 }}>
-        <div className="row">
-          <div className="group">
+      <div className="container text-left d-flex position-relative text-white" style={{ zIndex: 2 }}>
+        <div className="row py-5">
+          <div className="group py-5">
             <p className="mb-2 text-capitalize fw-bold">
               Schedule an appointment for a
             </p>
-            <h2 className="fw-bolder text-uppercase">Complimentary Consultation.</h2>       
+            <h2 className="fw-bolder pb-2 text-white text-uppercase">Complimentary Consultation</h2>       
           
-            <button className="btn bg-light fw-bold px-4">
+            {/* <button className="btn bg-light fw-bold px-4">
               Book Now
-            </button>
+            </button> */}
+
+            <button className="btn bg-light text-dark more-services-btn py-2">Book Now</button>
           </div>
         </div>
       </div>

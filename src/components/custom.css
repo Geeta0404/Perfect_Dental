@@ -44,3 +44,355 @@
         margin-right: 10px; /* Space between icon and text */
         border:1px solid #ee6401;
       }
+
+      /* Navbar.css */
+/* 
+.nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active-link {
+  color: #ee6401;
+} */
+
+/* Border Animation */
+/* .nav-link::before, .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ee6401;
+  transition: width 0.4s ease;
+}
+
+.nav-link::before {
+  top: 0;
+  right: 0;
+}
+
+.nav-link::after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::before, .nav-link:hover::after,
+.nav-link.active-link::before, .nav-link.active-link::after {
+  width: 100%;
+} */
+/* Navbar.css */
+
+.nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active-link {
+  color: #ee6401;
+}
+
+/* Border Animation */
+.nav-link::before, .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ee6401;
+  transition: width 0.4s ease;
+}
+
+.nav-link::before {
+  top: 0;
+  right: 0;
+}
+
+.nav-link::after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::before, .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Keep borders for active link */
+.nav-link.active-link::before, .nav-link.active-link::after {
+  width: 100%;
+}
+
+
+/* Global styling for section */
+.container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Card Design */
+.treatment-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect on Card */
+.treatment-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Wrapper for Zoom Effect */
+.card-img-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.treatment-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.view-link {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.view-link:hover {
+  color: #0056b3;
+}
+
+/* Modern Button */
+.more-services-btn {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.more-services-btn:hover {
+  background-color: #ff6347;
+  color:#fff;
+  font-weight: bold;
+}
+
+
+/* Section Styling */
+/* .team-section {
+  background-color: #00aaf2;
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #d9f3fc;
+} */
+
+/* Card Styling */
+/* .team-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+} */
+
+/* Hover Overlay */
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 170, 242, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+} */
+
+/* Social Icons */
+/* .social-icons a {
+  background-color: white;
+  color: #00aaf2;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bb5;
+  color: white;
+} */
+
+/* Doctor Name and Role */
+/* .doctor-name {
+  font-size: 1.3rem;
+  color: #007bb5;
+  margin-top: 15px;
+}
+
+.doctor-role {
+  font-size: 1rem;
+  color: #555;
+} */
+
+/* Section Styling */
+.team-section {
+  /* background-color: #00aaf2; */
+  color: white;
+}
+
+/* Team Card */
+.team-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container and Overlay */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Subtle Overlay Effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 170, 242, 0.3); /* Light Transparent */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Social Icons on Hover */
+.social-icons {
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  transition: bottom 0.4s ease;
+}
+
+.team-card:hover .social-icons {
+  bottom: 20px; /* Slide up on hover */
+}
+
+/* Icons Styling */
+.social-icons a {
+  background-color: white;
+  color: #00aaf2;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bb5;
+  color: white;
+}
+
+/* Doctor Name and Role */
+.doctor-name {
+  font-size: 1.3rem;
+  color: #007bb5;
+  margin-top: 15px;
+}
+
+.doctor-role {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.doctor-description{
+  font-size: 1rem;
+  color: #555;
+  padding: 0 20px 10px 0;
+}
